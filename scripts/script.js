@@ -5,8 +5,13 @@ $(document).ready(function(){
         success: function (data) {
             var data= JSON.parse(data);//Creating object for parsed JSON data
             var len = data.length;
-            var row = "<div class='row justify-content-evenly mx-5 my-3'></div>";
-            for(var i=0; i<len; i++){
+            
+            for (var i = 0; i < len; i++){
+                
+                if (i % 3 == 0) {
+                    var $row = $("<div class='row justify-content-evenly mx-5 my-3'></div>");
+                    
+                }
                 var id = data[i].id;
                 var title = data[i].title;
                 var body = data[i].body;
@@ -14,12 +19,14 @@ $(document).ready(function(){
 
                 
                 
-                var newsCard = "<div class='col-4'><div class='card' style='width: 18rem;'><img src='images/game.jpeg' class='card-img-top' alt='...'><div class='card-body'><h5 class='card-title'>"
+                var newsCard =
+                    "<div class='col-4'><div class='card' style='width: 18rem;'><img src='images/game.jpeg' class='card-img-top' alt='...'><div class='card-body'><h5 class='card-title'>"
                     + title
                 
-                    + "</h5 ><p class='card-text'>" + body + "</p><a href='#' class='btn btn-primary'>Go somewhere</a></div ></div ></div > "
+                    + "</h5 ><p class='card-text'>" + body +
+                    "</p><a href='#' class='btn btn-primary'>Go somewhere</a></div ></div ></div > "
                 
-                row.innerHtml = newsCard;
+                $row.append(newsCard);
 
                 // var tr_str = "<tr>" +
                 //     "<td align='center'>" + (i+1) + "</td>" +
@@ -27,13 +34,10 @@ $(document).ready(function(){
                 //     "<td align='center'>" + name + "</td>" +
                 //     "<td align='center'>" + email + "</td>" +
                 //     "</tr>";
-                if (i % 3 == 0) {
-                    var row = "<div class='row justify-content-evenly mx-5 my-3'></div>";
-                    
-                }
-                row.innerHtml = newsCard;
                 
-                $("body").append(newsCard);
+                
+                
+                $(".news").append($row);
                 debugger
             }
 
