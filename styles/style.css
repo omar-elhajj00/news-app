@@ -15,11 +15,78 @@ img {
 
 /* Nav Bar*/
 
+.offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+
+
+}
+
+
+
+.navbar {
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background-color: rgba(0, 0, 0, .6) !important;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.navbar-brand {
+  font-size: 1.9rem;
+}
+
+.navbar-nav li {
+  padding-right: .7rem;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+  transition: .2s;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .top-nav {
   /* max-width: 100%; */
   font-family: 'Roboto Slab', serif;
   background-color: #000000;
-  padding: 0 20vh;
+
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -62,7 +129,7 @@ h1{
 /* Hero */
 
 .hero {
-  background:#1abc9c;
+  background:#a8a8a8;
   color: #fff;
 }
 
