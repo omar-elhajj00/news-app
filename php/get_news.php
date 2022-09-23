@@ -14,7 +14,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorizatio
 // $message=$_GET["message"];
 
 //queries
-$query = $mysqli->prepare("SELECT (message) FROM users ");
+$query = $mysqli->prepare("SELECT * FROM news ");
 $query->execute();
 $array=$query->get_result();
 
