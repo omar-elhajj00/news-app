@@ -1,0 +1,266 @@
+/* CSS Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;600&family=Lato:wght@400;700&family=Maven+Pro:wght@800;900&family=Noto+Sans+KR&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+img {
+  height: 100%;
+}
+
+
+/* Nav Bar*/
+
+.top-nav {
+  /* max-width: 100%; */
+  font-family: 'Kanit', sans-serif;
+  background-color: #2c3e50;
+  padding: 0 20vh;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+
+}
+
+nav .fa-bars {
+  display: none;
+}
+
+h1{
+  font-family: 'Kanit', sans-serif;
+}
+.top-nav h1{
+  align-self: center;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.links > li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.links li:hover{
+  color:#1abc9c;
+  transition: .2s;
+}
+
+.links > li:last-child {
+  margin-right: 0px;
+}
+
+/* Hero */
+
+.hero {
+  background:#1abc9c;
+  color: #fff;
+}
+
+.hero-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20vh 0 30vh 0;
+
+}
+
+.hero-heading {
+  font-size: 64px;
+  margin-bottom: 40px;  
+}
+
+
+/* portfolio section */
+
+.portfolio-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 13vw;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.portfolio {
+  margin-top: 5vh;
+  color:#2c3e50 ;
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+}
+
+.portfolio-images{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2vh;
+}
+
+.portfolio-images img {
+  max-width: 50vh;
+  margin :0.4vw;
+  border-radius: .7rem;
+}
+
+.portfolio-images img:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+/* about section */
+
+
+.about-container {
+  background: #1abc9c;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3vh 0 30vh 0;
+  font-size: 2rem;
+}
+
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column-content {
+  max-width: 30vw;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  line-height: 2rem;
+  margin-left:2rem
+}
+
+.about-container button{
+  width:15vw;
+  margin-top: 7vh;
+  height: 6vh;
+  background-color: rgba(245, 245, 220, 0);
+  border: white 1px solid;
+  border-radius:1rem;
+  color:white;
+}
+.about-container button:hover{
+  color:#000;
+  background-color: #e6e6e6;
+  transition:.4s;
+  cursor: pointer;
+}
+
+
+/* contact us section */
+
+.contact-us-container{
+  margin-top: 5vh;
+  color: #2c3e50;
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-container form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-us-container form input[type=text]{
+  width:40vw;
+  height: 7vh;
+  margin-bottom: 1rem;
+}
+.contact-us-container form input[type=email]{
+  width:40vw;
+  height: 7vh;
+  margin-bottom: 1rem;
+}
+.contact-us-container form input[type=tel]{
+  width:40vw;
+  height: 7vh;
+  margin-bottom: 1rem;
+}
+.contact-us-container form textarea{
+  width:40vw;
+  height: 20vh;
+  margin-bottom: 1rem;
+}
+
+.contact-us-container form button{
+  margin-top: 1.5rem;
+  background-color: #1abc9c;
+  border: none;
+  padding: 1rem;
+  color: white;
+  border-radius: .5rem;
+}
+
+.contact-us-container form button:hover {
+  background-color: #15947b;
+  transition: .2s;
+  cursor:pointer;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10vw;
+  background-color:#2c3e50;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer > h1 {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+/* Media Query */
+
+@media only screen and (max-width: 800px) {
+  .mobile {
+    flex-direction: column;
+  }
+    .top-nav {
+      padding: 0 5vh;
+    }
+
+  nav .fa-bars {
+    display: block;
+    font-size: 3rem;
+    align-self: center;
+  }
+  .links{
+    display:none;
+  }
+  .footer{
+    padding: 5vw;
+  }
+  h1{
+    font-size: 80%;
+  }
+}
