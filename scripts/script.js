@@ -10,16 +10,11 @@ $(document).ready(function(){
                 var title = data[i].title;
                 var body = data[i].body;
                 
-                var newsCard = '<div class="col-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/game.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <p class="card-text"></p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                        </div>'
+                var newsCard = "<div class='col-4'><div class='card' style='width: 18rem;'><img src='images/game.jpeg' class='card-img-top' alt='...'><div class='card-body'><h5 class='card-title'>"
+                    + title
+                
+                    + "</h5 ><p class='card-text'>" + body + "</p><a href='#' class='btn btn-primary'>Go somewhere</a></div ></div ></div > "
+                
                 
 
                 // var tr_str = "<tr>" +
