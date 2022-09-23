@@ -25,7 +25,7 @@ $(document).ready(function(){
                     "<div class='col-4'><div class='card' style='width: 18rem;'><img src='images/wsj.jfif' class='card-img-top' alt='...'><div class='card-body'><h5 class='card-title'>"
                     + title
                     + "</h5 ><p class='card-text'>" + body +
-                    "</p><a href='#' class='btn btn-primary'>Go somewhere</a></div ></div ></div > "
+                    "</p><a href='#' class='btn btn-primary'>More Details</a></div ></div ></div > "
                 //append the news card to the wor
                 $row.append(newsCard);
                 //append the row to the news division
